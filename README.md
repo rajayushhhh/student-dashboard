@@ -31,7 +31,7 @@ This project is designed to be **beginner-friendly** and easy to understand for 
 1. Clone the repository:  
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/rajayushhhh/student-dashboard
 cd student-dashboard
 ```
 
