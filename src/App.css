@@ -1,0 +1,248 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f6fb;
+  color: #333;
+}
+
+
+header {
+  text-align: center;
+  background: #2d7ff9;
+  color: white;
+  padding: 15px 0;
+  font-size: 22px;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+}
+
+
+.container {
+  max-width: 400px;
+  background: #fff;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  background: #2d7ff9;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button:hover {
+  background: #1e5ed8;
+}
+
+
+.dashboard-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.logout-btn {
+  background: #ff5252;
+  padding: 8px 14px;
+  border-radius: 6px;
+}
+
+.logout-btn:hover {
+  background: #d43f3f;
+}
+
+
+.add-student-form {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.add-student-form input {
+  flex: 1;
+  min-width: 180px;
+}
+
+.add-student-form button {
+  flex: 0 0 120px;
+}
+
+
+.student-list-title {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.student-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 15px;
+}
+
+.student-card {
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.student-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 14px rgba(0, 0, 0, 0.08);
+}
+
+.student-card h4 {
+  color: #2d7ff9;
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+footer {
+  margin-top: auto; 
+  background: #2d7ff9;
+  color: white;
+  text-align: center;
+  padding: 12px 0;
+  font-size: 14px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.student-card button {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 6px;
+  font-size: 12px;
+  cursor: pointer;
+  background: #2d7ff9;
+  color: white;
+  transition: 0.2s;
+}
+
+.student-card button:hover {
+  background: #1e5ed8;
+}
+
+
+.student-card button:nth-child(2) {
+  background: #ff5252;
+}
+
+.student-card button:nth-child(2):hover {
+  background: #d43f3f;
+}
+
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 15px 20px;
+  margin-bottom: 30px;
+  background: #f5f7fa; 
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.dashboard-header h1 {
+  font-size: 22px;
+  color: #2d7ff9;
+}
+
+.logout-btn {
+  background: #ff5252;
+  padding: 8px 14px;
+  border-radius: 6px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.logout-btn:hover {
+  background: #d43f3f;
+}
+
+
+
+.student-grid::-webkit-scrollbar {
+  height: 6px;
+}
+
+.student-grid::-webkit-scrollbar-thumb {
+  background: rgba(0,0,0,0.2);
+  border-radius: 3px;
+}
+
+.student-grid::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.student-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+  gap: 15px; /* Space between cards */
+}
+
+@media (max-width: 900px) {
+  .student-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row on tablet */
+  }
+}
+
+@media (max-width: 600px) {
+  .student-grid {
+    grid-template-columns: 1fr; /* 1 card per row on mobile */
+  }
+}
