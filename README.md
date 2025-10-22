@@ -1,18 +1,101 @@
-# React + Vite
+# 🎓 Student Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A **simple React + Firebase project** to manage student profiles. Admins can add, edit, and delete student information. The app includes **authentication, a responsive dashboard, and persistent data storage** using Firestore.  
 
-Currently, two official plugins are available:
+This project is designed to be **beginner-friendly** and easy to understand for someone learning React and Firebase.  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🔹 Features
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+1. **Login & Signup** – Firebase Authentication for user management  
+2. **Admin Detection** – Only `admin@student.com` can add or edit students  
+3. **Add / Edit / Delete Students** – Admin can manage student profiles  
+4. **Student Cards** – Displays students in a card layout (3 per row)  
+5. **Responsive Design** – Works on desktop, tablet, and mobile  
+6. **Persistent Storage** – All student data is stored in Firebase Firestore  
 
-Note: This will impact Vite dev & build performances.
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Frontend:** React  
+- **Backend & Database:** Firebase (Auth + Firestore)  
+- **Routing:** React Router DOM  
+- **Styling:** Basic CSS (no frameworks)  
+
+---
+
+## 🚀 Installation & Running Locally
+
+1. Clone the repository:  
+
+```bash
+git clone <your-repo-url>
+cd student-dashboard
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+```
+
+3. Start the development server:
+
+```bash
+npm run dev
+```
+
+4. Open your browser at:
+
+```
+http://localhost:5173
+```
+
+> Note: Vite is used as the development server.  
+
+---
+
+## 🔑 Admin Credentials
+
+- **Email:** `admin@student.com`  
+- **Password:** `admin123`  
+
+---
+
+## 🏗️ Folder Structure
+
+```
+student-dashboard/
+├── public/
+├── src/
+│   ├── components/
+│   │   └── ProjectedRoute.jsx
+│   ├── pages/
+│   │   ├── Login.jsx
+│   │   ├── Signup.jsx
+│   │   └── Dashboard.jsx
+│   ├── firebase.js
+│   ├── App.jsx
+│   ├── App.css
+│   └── main.jsx
+├── package.json
+└── README.md
+```
+
+---
+
+## 💡 Usage
+
+1. Go to `/signup` to create a new account (optional for admin).  
+2. Login using your credentials.  
+3. Admin can:
+   - Add new students by filling in **Name, Email, and Major**.  
+   - Edit student information using the **Edit button**.  
+   - Delete student profiles using the **Delete button**.  
+4. All students are displayed as cards in a 3-per-row layout.  
+
+---
+
+
