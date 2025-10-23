@@ -4,6 +4,9 @@ A **simple React + Firebase project** to manage student profiles. Admins can add
 
 This project is designed to be **beginner-friendly** and easy to understand for someone learning React and Firebase.  
 
+🌐 **Live Demo:** [Click here to view the live site](ie-web-recruitment-student-dashboard.netlify.app)
+
+
 ---
 
 ## 🔹 Features
